@@ -1,20 +1,17 @@
-import { ClassValue } from "clsx";
 import { cn } from "../../utils/lib";
+import { Link, LinkProps } from "react-router-dom";
 
-export default function RoundedButton({
+export default function RoundedLink({
   className,
   children,
   ...rest
-}: React.ComponentProps<"button"> & {
-  className?: ClassValue;
-  children: React.ReactNode;
-}) {
+}: LinkProps) {
   return (
-    <button
+    <Link
       {...rest}
       className={cn("rounded-full py-3.5 px-5 text-xs font-ManRope", className)}
     >
       {children}
-    </button>
+    </Link>
   );
 }

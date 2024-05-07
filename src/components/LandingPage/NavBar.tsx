@@ -1,5 +1,6 @@
 import LogoSVG from "../LogoSvg";
 import RoundedButton from "../modules/RoundedButton";
+import RoundedLink from "../modules/RoundedLinks";
 
 export default function Navbar() {
   return (
@@ -7,7 +8,9 @@ export default function Navbar() {
       <nav className=" flex border rounded-full mx-auto  justify-between p-2.5 ">
         <LogoSVG className="w-16 h-auto" />
         <div className="flex gap-2 items-center">
-          <RoundedButton className="border">Get Projects</RoundedButton>
+          <RoundedLink className="border" to={"/register"}>
+            Get Projects
+          </RoundedLink>
           <RoundedButton className="bg-black text-white">
             Onboard Talent
           </RoundedButton>
