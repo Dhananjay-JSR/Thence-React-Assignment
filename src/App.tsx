@@ -6,7 +6,7 @@ import HeroImg from "./assets/HeroImg.png";
 export default function App() {
   return (
     <>
-      <header className="max-w-6xl px-2 py-1 mx-auto">
+      <header className="max-w-6xl px-2 py-1 mx-auto mt-4">
         <nav className="h-14 flex border rounded-full justify-between px-4">
           <LogoSVG className="w-16 h-auto" />
           <div className="flex gap-2 items-center">
@@ -27,25 +27,31 @@ export default function App() {
             <div>we’ve encountered.</div>
           </h1>
         </div>
-        <section className="max-w-4xl grid grid-cols-2 mx-auto mt-16">
-          <div className="flex items-center justify-center ml-14">
+        <section className="max-w-4xl grid lg:grid-cols-2 grid-rows-2 max-lg:gap-16 lg:grid-rows-1 mx-auto mt-16">
+          <div className="flex items-center justify-center lg:ml-14">
             <div className="relative ">
-              <img src={HeroImg} alt="Hero Image Girl" className="h-96 w-96" />
+              <img
+                src={HeroImg}
+                alt="Hero Image Girl"
+                className="h-96 max-lg:h-56 max-lg:w-56 w-96"
+              />
               <div className="absolute left-0 top-0 -translate-x-1/2 translate-y-1/2">
-                <div className="h-44 flex  flex-col justify-between w-52 bg-white relative rounded-3xl border p-6 ">
+                <div className="h-44 max-lg:h-28  flex  flex-col justify-between max-lg:w-32 w-52 bg-white relative rounded-3xl border max-lg:p-3 p-6 ">
                   <DefaultSVG />
-                  <div className="text-4xl font-semibold font-Poppins">40%</div>
-                  <div className="text-sm font-ManRope text-[#828282]">
+                  <div className="text-4xl max-lg:text-lg font-semibold font-Poppins">
+                    40%
+                  </div>
+                  <div className="text-sm font-ManRope leading-tight max-lg:text-[9px] text-[#828282]">
                     Achieved reduction in project execution time by optimising
                     team availability
                   </div>
                 </div>
               </div>
               <div className="absolute bottom-0 right-0 translate-x-1/3  translate-y-1/3">
-                <div className="h-44 flex  flex-col justify-between w-52 bg-[#002E18] relative rounded-3xl border p-6  border-gray-900">
-                  <div className="text-4xl font-semibold font-Poppins text-white">
+                <div className="h-44 max-lg:h-32 flex  flex-col justify-between w-52 max-lg:w-40 bg-[#002E18] relative rounded-3xl border max-lg:p-3 p-6  border-gray-900">
+                  <div className="text-4xl max-lg:text-xl font-semibold font-Poppins text-white">
                     $0.5{" "}
-                    <span className="uppercase text-[#A6A3A0] text-sm ">
+                    <span className="uppercase text-[#A6A3A0] text-sm max-lg:text-xs ">
                       million
                     </span>
                   </div>
@@ -56,10 +62,10 @@ export default function App() {
                 </div>
               </div>
 
-              <div className="absolute left-0 bottom-0 -translate-y-8 -translate-x-8">
-                <div className="rounded-full py-2.5 px-5 bg-white  gap-2 text-xs shadow-lg flex w-fit items-center">
+              <div className="absolute left-0 bottom-0 -translate-y-8 max-lg:translate-y-3 max-lg:-translate-x-14 -translate-x-8">
+                <div className="rounded-full py-2.5 max-lg:px-3 px-5 bg-white  gap-2 text-xs shadow-lg flex w-fit items-center">
                   <svg
-                    className="w-10 h-10"
+                    className="w-10 h-10 max-lg:w-6 max-lg:h-6"
                     width="53"
                     height="53"
                     viewBox="0 0 53 53"
@@ -79,10 +85,10 @@ export default function App() {
                     />
                   </svg>
                   <div>
-                    <div className="text-black text-lg font-bold font-ManRope">
+                    <div className="text-black max-lg:text-base text-lg font-bold font-ManRope">
                       10 days
                     </div>
-                    <div className="text-[#828282] font-ManRope font-medium">
+                    <div className="text-[#828282] max-lg:text-xs font-ManRope font-medium">
                       Staff Deployment
                     </div>
                   </div>
@@ -90,9 +96,9 @@ export default function App() {
               </div>
             </div>
           </div>
-          <div className="flex flex-col ml-32">
+          <div className="flex flex-col  lg:ml-32 max-lg:mx-auto ">
             <div className="w-fit mt-10">
-              <div className="font-semibold text-xl w-52">
+              <div className="font-semibold text-xl w-52 max-lg:w-72">
                 Enhance fortune 50 company’s insights teams research
                 capabilities
               </div>
@@ -120,8 +126,8 @@ export default function App() {
             </RoundedButton>
           </div>
         </section>
-        <section className="max-w-6xl  px-2">
-          <div className=" relative bg-[#E8EEE7] grid grid-cols-2 mx-auto mt-36 px-10 py-8 rounded-3xl">
+        <section className="max-w-6xl mx-auto px-2">
+          <div className=" relative bg-[#E8EEE7] max-lg:flex max-lg:flex-col max-lg:gap-8 grid grid-cols-2 mx-auto mt-36 px-10 py-8 rounded-3xl">
             <svg
               className="absolute w-96 h-96 bottom-0 left-0"
               width="491"
@@ -180,7 +186,7 @@ export default function App() {
           </div>
         </section>
         <footer className="max-w-6xl px-2 py-1 mx-auto  mt-8 mb-6">
-          <nav className="flex justify-between font-ManRope px-6 text-[#1C1C1C] bg-[#F5F5F5] py-8 rounded-3xl">
+          <nav className="flex max-lg:flex-col max-lg:gap-4 justify-between font-ManRope px-6 text-[#1C1C1C] bg-[#F5F5F5] py-8 rounded-3xl">
             <div className="font-medium">© Talup 2023. All rights reserved</div>
             <div className="flex gap-12 ">
               <a href="/" className="underline">
@@ -253,7 +259,7 @@ function CloseButton({ showOpen }: { showOpen?: boolean }) {
 export function DefaultSVG() {
   return (
     <svg
-      className="absolute top-0 left-3 w-16 h-16 rotate-3"
+      className="absolute top-0 left-3 max-lg:w-8 max-lg:h-8 max-lg:left-2 w-16 h-16 rotate-3"
       width="103"
       height="103"
       viewBox="20 25 90 90"
