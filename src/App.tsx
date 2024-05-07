@@ -120,63 +120,78 @@ export default function App() {
             </RoundedButton>
           </div>
         </section>
-        <section className="max-w-5xl relative bg-[#E8EEE7] grid grid-cols-2 mx-auto mt-36 px-10 py-8 rounded-3xl">
-          <svg
-            className="absolute w-96 h-96 bottom-0 left-0"
-            width="491"
-            height="475"
-            viewBox="0 0 491 300"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              opacity="0.4"
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-              d="M251.005 123.04H14.5072V0H255.167C369.093 0 401.151 14.6756 444.456 57.9807C477.934 91.7389 490.999 135.444 490.999 205.385V514.607H349.717V205.385C349.717 204.652 349.706 203.921 349.685 203.191L275.051 253.194L275.078 253.215L144.958 340.344C136.345 346.116 130.769 355.335 130.769 365.723C130.769 383.206 146.563 397.378 166.047 397.378L166.077 397.393H283.781V514.592H166.077H166.05C74.3429 514.592 0 447.884 0 365.596C0 313.559 29.7294 267.753 74.779 241.107L251.005 123.04Z"
-              fill="url(#paint0_linear_0_212)"
-            />
-            <defs>
-              <linearGradient
-                id="paint0_linear_0_212"
-                x1="245.5"
-                y1="2.84126e-08"
-                x2="245"
-                y2="457.5"
-                gradientUnits="userSpaceOnUse"
-              >
-                <stop stop-color="white" />
-                <stop offset="1" stop-color="white" stop-opacity="0" />
-              </linearGradient>
-            </defs>
-          </svg>
-          <div className="">
-            <div className="ml-8 ">
-              <div className="text-[#9E9D9D] font-CoverByYourGrace text-lg">
-                What’s on your mind
-              </div>
-              <div className="font-ManRope font-semibold text-3xl">
-                Ask Questions
+        <section className="max-w-6xl  px-2">
+          <div className=" relative bg-[#E8EEE7] grid grid-cols-2 mx-auto mt-36 px-10 py-8 rounded-3xl">
+            <svg
+              className="absolute w-96 h-96 bottom-0 left-0"
+              width="491"
+              height="475"
+              viewBox="0 0 491 300"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                opacity="0.4"
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M251.005 123.04H14.5072V0H255.167C369.093 0 401.151 14.6756 444.456 57.9807C477.934 91.7389 490.999 135.444 490.999 205.385V514.607H349.717V205.385C349.717 204.652 349.706 203.921 349.685 203.191L275.051 253.194L275.078 253.215L144.958 340.344C136.345 346.116 130.769 355.335 130.769 365.723C130.769 383.206 146.563 397.378 166.047 397.378L166.077 397.393H283.781V514.592H166.077H166.05C74.3429 514.592 0 447.884 0 365.596C0 313.559 29.7294 267.753 74.779 241.107L251.005 123.04Z"
+                fill="url(#paint0_linear_0_212)"
+              />
+              <defs>
+                <linearGradient
+                  id="paint0_linear_0_212"
+                  x1="245.5"
+                  y1="2.84126e-08"
+                  x2="245"
+                  y2="457.5"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="white" />
+                  <stop offset="1" stop-color="white" stop-opacity="0" />
+                </linearGradient>
+              </defs>
+            </svg>
+            <div className="">
+              <div className="ml-8 ">
+                <div className="text-[#9E9D9D] font-CoverByYourGrace text-lg">
+                  What’s on your mind
+                </div>
+                <div className="font-ManRope font-semibold text-3xl">
+                  Ask Questions
+                </div>
               </div>
             </div>
-          </div>
-          <div className="px-4 divide-y divide-[#D7D7D7] space-y-4">
-            <CollableList>Do you offer freelancers?</CollableList>
-            <CollableList>
-              What’s the guarantee that I will be satisfied with the hired
-              talent?
-            </CollableList>
-            <CollableList description="If unhappy with a project, communicate with the freelancer, allow for revisions, and refer to the agreement. Escalate to platform support if needed, considering mediation. Review policies, seek collaborative solutions for resolution.">
-              Can I hire multiple talents at once?
-            </CollableList>
-            <CollableList>
-              Why should I not go to an agency directly?
-            </CollableList>
-            <CollableList>
-              Who can help me pick a right skillset and duration for me?
-            </CollableList>
+            <div className="px-4 divide-y divide-[#D7D7D7] space-y-4">
+              <CollableList>Do you offer freelancers?</CollableList>
+              <CollableList>
+                What’s the guarantee that I will be satisfied with the hired
+                talent?
+              </CollableList>
+              <CollableList description="If unhappy with a project, communicate with the freelancer, allow for revisions, and refer to the agreement. Escalate to platform support if needed, considering mediation. Review policies, seek collaborative solutions for resolution.">
+                Can I hire multiple talents at once?
+              </CollableList>
+              <CollableList>
+                Why should I not go to an agency directly?
+              </CollableList>
+              <CollableList>
+                Who can help me pick a right skillset and duration for me?
+              </CollableList>
+            </div>
           </div>
         </section>
+        <footer className="max-w-6xl px-2 py-1 mx-auto  mt-8 mb-6">
+          <nav className="flex justify-between font-ManRope px-6 text-[#1C1C1C] bg-[#F5F5F5] py-8 rounded-3xl">
+            <div className="font-medium">© Talup 2023. All rights reserved</div>
+            <div className="flex gap-12 ">
+              <a href="/" className="underline">
+                Terms & Conditions
+              </a>
+              <a href="/" className="underline">
+                Privacy Policy
+              </a>
+            </div>
+          </nav>
+        </footer>
       </main>
     </>
   );
