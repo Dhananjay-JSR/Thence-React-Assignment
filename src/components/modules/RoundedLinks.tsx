@@ -8,6 +8,7 @@ export default function RoundedLink({
 }: LinkProps) {
   return (
     <Link
+      unstable_viewTransition
       {...rest}
       className={cn("rounded-full py-3.5 px-5 text-xs font-ManRope", className)}
     >

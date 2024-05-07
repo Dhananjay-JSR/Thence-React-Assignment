@@ -19,7 +19,13 @@ export default function Form() {
           setIsEmailValid(false);
           return;
         } else {
-          router("/submit");
+          if (document.startViewTransition) {
+            document.startViewTransition(() => {
+              router("/submit");
+            });
+          } else {
+            router("/submit");
+          }
         }
       }}
       className="w-80 mt-10 "

@@ -5,9 +5,20 @@ import GreenTick from "../components/modules/svg/GreenTick";
 
 export default function ResultScreen() {
   const router = useNavigate();
+
+  const viewNavigate = (newRoute: string) => {
+    if (!document.startViewTransition) {
+      return router(newRoute);
+    } else {
+      return document.startViewTransition(() => {
+        router(newRoute);
+      });
+    }
+  };
+
   useEffect(() => {
     const timer = setTimeout(() => {
-      router("/");
+      viewNavigate("/");
     }, 5000);
     return () => clearTimeout(timer);
   }, []);
